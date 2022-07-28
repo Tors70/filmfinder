@@ -10,7 +10,6 @@ const getGenres = async () => {
     const response = await fetch(urlToFetch);
     if (response.ok) {
       const jsonResponse = await response.json();
-      console.log(jsonResponse);
       const genres = jsonResponse.genres;
       console.log(genres);
       return genres;
@@ -23,9 +22,11 @@ const getGenres = async () => {
 
 const getMovies = async () => {
   const selectedGenre = getSelectedGenre();
+  console.log("this is the selected genre: " + selectedGenre);
   const discoverMovieEndpoint = "/discover/movie";
-  const requestParams = "?api_key=" + tmdbKey + "&genre/" + selectedGenre;
+  const requestParams = "?api_key=" + tmdbKey + "&with_genres=" + selectedGenre;
   const urlToFetch = tmdbBaseUrl + discoverMovieEndpoint + requestParams;
+  console.log(urlToFetch);
   try {
     const response = await fetch(urlToFetch);
     if (response.ok) {

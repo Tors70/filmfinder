@@ -1,24 +1,40 @@
 body {
-  background-color: #7f0920;
+  background-color: #b1d2f7;
   color: #0a0408;
 }
-
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgb(193, 210, 185);
+}
+.center {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
 #appTitle {
   text-align: center;
   margin: 0px auto;
   display: block;
-  font-family: "Staatliches", sans-serif;
-  font-size: 80px;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 8px;
 }
-
-#genreForm,
-#playBtn {
+#genres {
+  margin-top: 1rem;
+}
+#genreForm {
   text-align: center;
-  margin: 0px auto;
+  margin: 0rem 2rem 1rem 0;
   display: block;
   font-family: "Fredoka One", sans-serif;
 }
-
+#playBtn {
+  text-align: center;
+  margin: 1rem 2rem 0 0;
+  display: block;
+  font-family: "Fredoka One", sans-serif;
+}
 #movieInfo {
   width: 65%;
   margin: 32px auto;
