@@ -44,14 +44,14 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    /*    opacity: 0;
+    opacity: 0;
     transform: scale(1);
-    transition: all .9s ease-out; */
+    transition: all .9s ease-out;
 }
 
 .slide:nth-last-child(2) {
-    /* opacity: 1;
-    transform: scale(1.08); */
+    opacity: 1;
+    transform: scale(1.08);
 }
 
 .selectMode {
@@ -68,6 +68,10 @@ body {
 #rndDogs {
     /* padding: 0.5rem; */
     margin: 1rem;
+}
+
+#optionCss {
+    padding: .5rem;
 }
 
 #rndDogsBtn {
