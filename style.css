@@ -174,3 +174,10 @@ select {
   background-color: #c74a4a;
   color: #910000;
 }
+#headerWithIcons {
+  background-color: #249e57;
+  display: flex;
+}
+#iconsHeading {
+  font-size: 3rem;
+}
