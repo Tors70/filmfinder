@@ -55,13 +55,6 @@ a:active {
   font-family: "Fredoka One", sans-serif;
 }
 
-#playBtn {
-  text-align: center;
-  margin: 1rem 2rem 0 0;
-  display: block;
-  font-family: "Fredoka One", sans-serif;
-}
-
 #movieInfo {
   width: 65%;
   margin: 32px auto;
@@ -129,7 +122,7 @@ img#dogPoster {
   padding: 32px;
 }
 
-#playBtn {
+.playBtn {
   margin-top: 20px;
   font-size: 25px;
   padding: 7px 10px;
@@ -138,8 +131,8 @@ img#dogPoster {
   background-color: #b97828;
   color: #fdc238;
   cursor: pointer;
+  font-family: "Fredoka One", sans-serif;
 }
-
 label {
   display: block;
   font-size: 35px;
@@ -175,9 +168,19 @@ select {
   color: #910000;
 }
 #headerWithIcons {
-  background-color: #249e57;
+  background-color: rgb(160, 210, 136);
   display: flex;
+  padding-bottom: 0.5rem;
 }
 #iconsHeading {
   font-size: 3rem;
+  padding-top: 0.5rem;
+}
+#or {
+  font-size: 1.5rem;
+  margin: 2rem 1rem 0 1rem;
+  font-family: "Fredoka One", sans-serif;
+}
+#rndImgSrc {
+  max-width: 500px;
 }
