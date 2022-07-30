@@ -1,6 +1,8 @@
 html,
 body {
   height: 100%;
+  background-color: #b1d2f7;
+  color: #0a0408;
 }
 
 body {
@@ -23,16 +25,17 @@ a:active {
   text-decoration: none;
 }
 .app {
-  height: 50%;
+  height: 500px;
   width: 50%;
   margin: auto;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .header {
   text-align: center;
-  padding: 20px 0;
+  /* padding: 0.2rem 0; */
+  margin-top: 0.5rem;
 }
 
 .header h1 {
@@ -52,26 +55,27 @@ a:active {
 
 .slide {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 1rem;
+  bottom: 1rem;
   left: 0;
   right: 0;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position: left center;
   opacity: 0;
   transform: scale(1);
-  transition: all 0.9s ease-out;
+  transition: all 0.8s ease-out;
 }
 
 .slide:nth-last-child(2) {
   opacity: 1;
-  transform: scale(1.08);
+  transform: scale(1.02);
 }
 
 .selectMode {
   display: flex;
   justify-content: center;
+  background-color: rgb(193, 210, 185);
 }
 
 #breed {
@@ -90,10 +94,20 @@ a:active {
 }
 
 #rndDogsBtn {
-  padding: 0.5rem;
-  /* margin: 1rem; */
+  /* padding: 0.5rem;
+   margin: 1rem; 
   background-color: rgb(255, 255, 255);
-  border-color: rgb(216, 216, 216);
+  border-color: rgb(216, 216, 216); */
+
+  /* margin-top: 20px; */
+  font-size: 25px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #b97828;
+  color: #fdc238;
+  cursor: pointer;
+  font-family: "Fredoka One", sans-serif;
 }
 
 #selecter {
@@ -104,4 +118,45 @@ a:active {
 
 #orWord {
   margin-top: 1.5rem;
+}
+/* Extra added */
+#headerWithIcons {
+  background-color: rgb(160, 210, 136);
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+#iconsHeading {
+  font-size: 3rem;
+  padding-top: 0.5rem;
+}
+#iconsHeading a {
+  padding: 0rem;
+  margin: 0rem;
+}
+#appTitle {
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 8px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.random {
+  margin-left: auto;
+}
+#rndImgSrc {
+  max-width: 500px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
 }

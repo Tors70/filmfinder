@@ -1,31 +1,46 @@
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Fredoka+One&family=Questrial&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dog.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/e918d10e90.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="dog.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="dog.css">
-</head>
-
-<body>
-  <div class="app">
-    <div class="header">
-      <h1>Infinite dog app <a href="index.html">🐩</a><a href="test.html">🐩</a></h1>
-      <div class="selectMode">
-        <div id="breed">
-
+  <body>
+    <div class="container">
+      <div class="header" id="headerWithIcons">
+        <h1 id="appTitle">Dog Finder</h1>
+        <div id="iconsHeading">
+          <a href="index.html"> 🍿</a>
+          <a href="dog.html">🐶</a>
+          <a href="dog2.html">🐕‍🦺</a>
         </div>
+      </div>
+      <div class="selectMode">
+        <div id="breed"></div>
         <p id="orWord">OR</p>
         <div id="rndDogs">
           <button id="rndDogsBtn">Show random dog</button>
         </div>
       </div>
+      <div class="row">
+        <div class="colomn app">
+          <div class="slideshow" id="slideshow"></div>
+        </div>
+        <img class="column" id="rndImgSrc" src="" />
+      </div>
     </div>
-    <div class="slideshow" id="slideshow">
-    </div>
-  </div>
-  </div>
-  <script src='dog.js'></script>
-</body>
-
+  </body>
 </html>

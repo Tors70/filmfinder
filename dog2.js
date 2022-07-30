@@ -1,6 +1,7 @@
+// Code for generating random image
 const rndBtn = document.getElementById("playBtn3");
 
-async function start() {
+async function starter() {
   try {
     const response = await fetch("https://dog.ceo/api/breeds/image/random");
     const data = await response.json();
@@ -13,7 +14,7 @@ async function start() {
 }
 // start();
 
-rndBtn.onclick = start;
+rndBtn.onclick = starter;
 const createImage = (imgAdress) => {
   document.getElementById("rndImgSrc").src = imgAdress;
 };
